@@ -96,4 +96,16 @@ class RegisterUserViewSet(viewsets.ViewSet):
 class UserViewset(QueryArgumentsMixin, EagerLoadingMixin, viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    http_method_names = ['get', 'put', 'patch', 'delete']        
+    http_method_names = ['get', 'put', 'patch', 'delete'] 
+
+   
+class videoViewset(QueryArgumentsMixin, EagerLoadingMixin, viewsets.ModelViewSet):
+    queryset = Video.objects.all()
+    serializer_class = videosSerializer
+    http_method_names = ['get', 'put', 'patch', 'delete']           
+
+
+class NewsletterViewset(QueryArgumentsMixin, EagerLoadingMixin, viewsets.ModelViewSet):
+    queryset = Newsletter.objects.all()
+    serializer_class = NewsletterSerializer
+    http_method_names = ['get', 'put', 'patch', 'delete']     

@@ -22,5 +22,21 @@ class UserSerializer(DynamicFieldsMixin, NestedModelSerializer):
     date_of_birth= serializers.CharField(required=True)
     phone_number =serializers.CharField(required=True)
     Nationality =serializers.CharField(required=True)
-   
-  
+
+
+
+class videosSerializer(DynamicFieldsMixin, NestedModelSerializer):
+    class Meta:
+         model =  Video
+         fields ='__all__'   
+
+class NewsletterSerializer(DynamicFieldsMixin, NestedModelSerializer):
+    class Meta:
+         model =  Newsletter
+         fields ='__all__'         
+
+
+class NewsletterSerializer(DynamicFieldsMixin, NestedModelSerializer):
+    class Meta:
+         model =  Newsletter
+         fields ='__all__'                      

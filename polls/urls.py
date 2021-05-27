@@ -7,7 +7,7 @@ router =DefaultRouter()
 router.register('user',UserViewset,basename="user")
 router.register('auth',AuthenticateUserViewSet,basename="auth")
 router.register('register',RegisterUserViewSet,basename="register")
-
+router.register('video',RegisterUserViewSet,basename="video")
 
 
 urlpatterns = [

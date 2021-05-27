@@ -96,7 +96,7 @@ def article(instance, filename):
 
 
 
-class article(models.Model):
+class Article(models.Model):
    title = models.CharField(max_length=20)
    description = models.CharField(max_length=20)
    src = models.FileField(upload_to=article,null=True, blank=True)     
