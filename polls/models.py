@@ -48,6 +48,7 @@ class Wards(models.Model):
 class User(AbstractUser):
    middle_name = models.CharField(max_length=20, blank=True)
    date_of_birth = models.DateField(null=True)
+   phone_number =models.CharField(max_length=20)
    Nationality= models.CharField(max_length=20,null=True)
    Region = models.ForeignKey(Regionss,on_delete=models.CASCADE,null=True)
    gender = models.CharField(max_length=10,null=True,choices=GENDER_CHOICES )
