@@ -13,17 +13,14 @@ class UserSerializer(DynamicFieldsMixin, NestedModelSerializer):
         write_only=True,
         style={'input_type': 'password'}
     )
-    #username =serializers.CharField(required=True)
+    username =serializers.CharField(required=True)
     first_name = serializers.CharField(required=True)
     middle_name =serializers.CharField(required=True)
     last_name = serializers.CharField(required=True)
     gender =serializers.CharField(required=True)
     Region =serializers.CharField(required=True)
-    District =serializers.CharField(required=True)
-    Ward =serializers.CharField(required=True)
     date_of_birth= serializers.CharField(required=True)
-    phone =serializers.CharField(required=True)
+    phone_number =serializers.CharField(required=True)
     Nationality =serializers.CharField(required=True)
-    level_Of_Education = serializers.CharField(required=True)
-    Status_of_Employment = serializers.CharField(required=True)
-    # src = serializers.FileField(required=True)
+   
+  
