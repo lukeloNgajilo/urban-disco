@@ -109,3 +109,8 @@ class NewsletterViewset(QueryArgumentsMixin, EagerLoadingMixin, viewsets.ModelVi
     queryset = Newsletter.objects.all()
     serializer_class = NewsletterSerializer
     http_method_names = ['get', 'put', 'patch', 'delete']     
+
+class NewsletterViewset(QueryArgumentsMixin, EagerLoadingMixin, viewsets.ModelViewSet):
+    queryset = Article.objects.all()
+    serializer_class = ArticleSerializer
+    http_method_names = ['get', 'put', 'patch', 'delete']  

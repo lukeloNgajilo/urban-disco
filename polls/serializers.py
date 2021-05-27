@@ -36,7 +36,7 @@ class NewsletterSerializer(DynamicFieldsMixin, NestedModelSerializer):
          fields ='__all__'         
 
 
-class NewsletterSerializer(DynamicFieldsMixin, NestedModelSerializer):
+class ArticleSerializer(DynamicFieldsMixin, NestedModelSerializer):
     class Meta:
-         model =  Newsletter
+         model =  Article
          fields ='__all__'                      
