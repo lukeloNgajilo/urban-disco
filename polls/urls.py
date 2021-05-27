@@ -7,8 +7,9 @@ router =DefaultRouter()
 router.register('user',UserViewset,basename="user")
 router.register('auth',AuthenticateUserViewSet,basename="auth")
 router.register('register',RegisterUserViewSet,basename="register")
-router.register('video',RegisterUserViewSet,basename="video")
-
+router.register('video',videosSerializer,basename="video")
+router.register('article',ArticleSerializer,basename="article")
+router.register('newsletter',ArticleSerializer,basename="newsletter")
 
 urlpatterns = [
     path('',include(router.urls)),
