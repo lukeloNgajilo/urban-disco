@@ -5,7 +5,7 @@ from django.db.models.fields import CharField
 from django.utils import timezone
 from django.contrib.auth.models import AbstractUser
 from django.dispatch import receiver
-
+from uuid import uuid4
 from django.db.models.signals import post_save
 from django.conf import settings
 from rest_framework.authtoken.models import Token
